@@ -48,7 +48,7 @@ using namespace chip::app;
 // Globals
 // This is not declared CONST in order to handle dynamic endpoint information
 // retrieved from tokens.
-EmberAfDefinedEndpoint emAfEndpoints[MAX_ENDPOINT_COUNT];
+EXT_RAM_BSS_ATTR EmberAfDefinedEndpoint emAfEndpoints[MAX_ENDPOINT_COUNT];
 
 #if (ATTRIBUTE_MAX_SIZE == 0)
 #define ACTUAL_ATTRIBUTE_SIZE 1
@@ -56,7 +56,7 @@ EmberAfDefinedEndpoint emAfEndpoints[MAX_ENDPOINT_COUNT];
 #define ACTUAL_ATTRIBUTE_SIZE ATTRIBUTE_MAX_SIZE
 #endif
 
-uint8_t attributeData[ACTUAL_ATTRIBUTE_SIZE];
+EXT_RAM_BSS_ATTR uint8_t attributeData[ACTUAL_ATTRIBUTE_SIZE];
 
 // ----- internal-only methods, not part of the external API -----
 
@@ -86,7 +86,7 @@ namespace {
 #else
 #define ACTUAL_SINGLETONS_SIZE ATTRIBUTE_SINGLETONS_SIZE
 #endif
-uint8_t singletonAttributeData[ACTUAL_SINGLETONS_SIZE];
+EXT_RAM_BSS_ATTR uint8_t singletonAttributeData[ACTUAL_SINGLETONS_SIZE];
 
 uint16_t emberEndpointCount = 0;
 
