@@ -66,7 +66,7 @@ private:
 
     System::Clock::Timestamp mStartTime = System::Clock::kZero;
 
-    static PlatformManagerImpl sInstance;
+    static EXT_RAM_BSS_ATTR PlatformManagerImpl sInstance;
 };
 
 /**
