@@ -251,7 +251,7 @@ private:
     /**********************************************************
      * Attributes Declaration
      *********************************************************/
-    static ColorControlServer instance;
+    static EXT_RAM_BSS_ATTR ColorControlServer instance;
     static constexpr size_t kColorControlClusterServerMaxEndpointCount =
         MATTER_DM_COLOR_CONTROL_CLUSTER_SERVER_ENDPOINT_COUNT + CHIP_DEVICE_CONFIG_DYNAMIC_ENDPOINT_COUNT;
     static_assert(kColorControlClusterServerMaxEndpointCount <= kEmberInvalidEndpointIndex, "ColorControl endpoint count error");
