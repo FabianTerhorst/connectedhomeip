@@ -57,7 +57,7 @@ private:
 
 using Protocols::InteractionModel::Status;
 
-Global<InteractionModelEngine> sInteractionModelEngine;
+EXT_RAM_BSS_ATTR Global<InteractionModelEngine> sInteractionModelEngine;
 
 InteractionModelEngine::InteractionModelEngine() : mReportingEngine(this) {}
 
