@@ -123,7 +123,7 @@ private:
     FabricSceneInfo mFabricSceneInfo;
 
     // Instance
-    static ScenesServer mInstance;
+    static EXT_RAM_BSS_ATTR ScenesServer mInstance;
 };
 
 } // namespace ScenesManagement
