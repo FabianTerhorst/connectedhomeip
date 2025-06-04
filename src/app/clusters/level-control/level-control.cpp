@@ -100,7 +100,7 @@ typedef struct
     CallbackScheduleState callbackSchedule;
 } EmberAfLevelControlState;
 
-static EmberAfLevelControlState stateTable[kLevelControlStateTableSize];
+static EXT_RAM_BSS_ATTR EmberAfLevelControlState stateTable[kLevelControlStateTableSize];
 
 static EmberAfLevelControlState * getState(EndpointId endpoint);
 
